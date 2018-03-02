@@ -1,0 +1,26 @@
+/* Styles for my aia.html page */
+
+table {
+    width:80%;
+    border:1px solid red;
+    margin:2em auto 2em auto; /* Top Right Bottom Left */
+border-collapse:collapse;
+ }
+
+table.client th{
+    width:25%;
+    background-color:#ccc;
+        
+}
+
+table.audience th{ 
+    background-color: #000;
+    color: #fff;
+    width: 33%;
+}
+
+td, th {
+    border:1px solid #000;
+    padding:0.5em;
+    
+}

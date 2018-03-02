@@ -1,0 +1,171 @@
+/* My WEB120 Portal Website Styles */
+
+/* START GLOBAL RULES: Apply to all screen sizes */
+
+html {
+    background-color:#ccc;
+}
+
+div.wrapper {
+    background-color:#fff;
+	overflow:auto;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+p {
+    margin-left:1em;
+}
+
+h1, h2, h3 {
+    margin-left:.5em;
+}
+
+.logo {
+    color:#f00;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+.pageID {
+    color:#f00;
+}
+/* START WEBCAM */
+
+    div.dot iframe {
+        border:0;
+        width:335px;
+        height:249px;
+}
+
+    body.webcam {
+        margin:0; padding:0;
+}
+
+    body.webcam img {
+        width:100;
+}
+/* END WEBCAME */
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* START EMBED RESPONSIVELY STYLES */
+
+.embed-container {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* END EMBED RESPONSIVELY STYLES */ 
+
+footer {
+	clear:both;
+    text-align:center;
+}
+
+
+/* END GLOBAL RULES */
+
+
+/* START RESPONSIVE STYLES */
+
+/* desktop: Apply these rules when above 1400px resolution */
+@media all and (min-width:1400px) {
+	
+	div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    /* LEFT COLUMN */
+    section {
+		width:65%;
+		float:left;
+	}
+	
+    /* RIGHT COLUMN */
+	aside {	
+		width:34%;
+		float:right;
+	}
+			
+	/* SHOW Desktop Image */
+    img.desktop {
+       float:left;
+       width:50%;
+    }
+    
+    /* HIDE Tablet and Phone Images */
+    img.tablet, img.phone {
+        display:none;
+    }  
+}
+
+
+/* TABLET: Aply these rules between 737px and 1399px */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:60%;
+		float:left;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+    img.tablet {
+       width:100%;
+    }
+    
+    img.phone, img.desktop {
+        display:none;
+    } 
+    
+}
+
+
+/* PHONE: Apply these rules when below 736px resolution */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       width:100%;
+    }
+    
+    img.tablet, img.desktop {
+        display:none;
+    }  
+}
+
+/* END RESPONSIVE STYLES */
